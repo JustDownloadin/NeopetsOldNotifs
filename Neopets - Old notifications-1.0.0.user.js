@@ -38,12 +38,20 @@ console.log("Initial variables set");
 
 const STYLE = `
 <style>
+@media screen and (min-width: 825px) {
+#notif{
+width: 300px;
+}
+@media screen and (min-width: 1900px) {
+#notif{
+width: 600px;
+}
+}
 #notif {
 	position: relative;
     left: 210px;
 	box-sizing: content-box;
     text-align: left;
-    width: 600px;
     height: 60px;
     padding: 0 10px;
     border: 2px solid #350000;
@@ -52,6 +60,7 @@ const STYLE = `
     -webkit-box-shadow: 0 3px 0 0 #350000;
     -moz-box-shadow: 0 3px 0 0 #350000;
     background-color: #fff;
+}
 
     p {
     	font-family: 'MuseoSansRounded700', 'Arial', sans-serif;
@@ -88,7 +97,6 @@ const STYLE = `
     	cursor: pointer;
     }
 
-}
 </style>
 `;
 
