@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Neopets - Old notifications
 // @namespace    https://github.com/JustDownloadin/NeopetsOldNotifs
-// @version      1.0.0
+// @version      1.0.1
 // @description  Displays notifications on the new layout's nav bar
 // @author       Zana
 // @match        *://*.neopets.com/*
@@ -119,3 +119,12 @@ console.log("Notification printed");
 
 var setFlag = checkforNotifs();
 if (setFlag == true) {produceNewNotif();};
+
+$(document).ready(function closeInNav (){
+var siteClose = document.querySelector('#alerts.alerts-tab-content__2020 > ul > li > div'); //It wouldn't work as a global variable...
+var scriptClose = document.querySelector('#notif .alert-x');
+    scriptClose.addEventListener('click', function () {
+        siteClose.click();
+        console.log("Notification closed");
+    }, false);
+});
