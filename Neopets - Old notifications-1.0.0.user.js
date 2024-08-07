@@ -7,6 +7,8 @@
 // @match        *://*.neopets.com/*
 // @icon         https://images.neopets.com/themes/h5/basic/images/alert/neomail-icon.svg
 // @grant        none
+// @downloadURL  https://github.com/JustDownloadin/NeopetsOldNotifs/raw/main/Neopets%20-%20Old%20notifications-1.0.0.user.js
+// @updateURL    https://github.com/JustDownloadin/NeopetsOldNotifs/raw/main/Neopets%20-%20Old%20notifications-1.0.0.user.js
 // ==/UserScript==
 
 var notifs = document.querySelector('#alerts.alerts-tab-content__2020 > ul > li');
@@ -55,7 +57,7 @@ const STYLE = `
     	font-family: 'MuseoSansRounded700', 'Arial', sans-serif;
         font-size: 10pt;
         margin-top: 7px;
-        margin-right: 55px;
+        margin-right: 15px;
     }
 
     .notifFooter {
@@ -79,8 +81,8 @@ const STYLE = `
     	background-size: auto;
     	background-size: 100%;
     	position: absolute;
-    	width: 20px;
-    	height: 20px;
+    	width: 15px;
+    	height: 15px;
     	top: 5px;
     	right: 5px;
     	cursor: pointer;
