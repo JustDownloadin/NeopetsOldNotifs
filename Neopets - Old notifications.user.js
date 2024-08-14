@@ -9,6 +9,7 @@
 // @grant        none
 // @downloadURL  https://github.com/JustDownloadin/NeopetsOldNotifs/raw/main/Neopets%20-%20Old%20notifications-1.0.0.user.js
 // @updateURL    https://github.com/JustDownloadin/NeopetsOldNotifs/raw/main/Neopets%20-%20Old%20notifications-1.0.0.user.js
+// @license      GPL-3.0
 // ==/UserScript==
 
 var notifs = document.querySelector('#alerts.alerts-tab-content__2020 > ul > li');
