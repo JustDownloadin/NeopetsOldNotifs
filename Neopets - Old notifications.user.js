@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Neopets - Old notifications
 // @namespace    https://github.com/JustDownloadin/NeopetsOldNotifs
-// @version      1.0.1
-// @description  Displays notifications on the new layout's nav bar
+// @version      1.0.2
+// @description  (DEPRECATED - SEE NOTICE) Displays notifications on the new layout's nav bar
 // @author       Zana
 // @match        *://*.neopets.com/*
 // @icon         https://images.neopets.com/themes/h5/basic/images/alert/neomail-icon.svg
@@ -11,6 +11,17 @@
 // @updateURL    https://github.com/JustDownloadin/NeopetsOldNotifs/raw/main/Neopets%20-%20Old%20notifications-1.0.0.user.js
 // @license      GPL-3.0
 // ==/UserScript==
+
+/*
+	NOTICE: user GrarrlMunch contacted me privately to make their own improved version of this script. Their version is more robust than mine,
+ 	I recommend you replace this script with theirs if you want to have a better user experience. I will personally switch to their version in my day-to-day use.
+	
+  	Their version can be found in the following link:
+   		https://greasyfork.org/en/scripts/512519-new-old-notifications-neopets
+     		https://greasyfork.org/en/scripts/512519-new-old-notifications-neopets
+       		https://greasyfork.org/en/scripts/512519-new-old-notifications-neopets
+ 	
+*/
 
 var notifs = document.querySelector('#alerts.alerts-tab-content__2020 > ul > li');
 function checkforNotifs() {
